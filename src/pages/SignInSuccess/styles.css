@@ -1,0 +1,60 @@
+#page-sign-in-success {
+  background-color: var(--color-primary);
+  background-image: url('../../assets/images/success-background.svg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-text-in-primary);
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-sign-in-success-content {
+  padding: 2rem;
+}
+
+#page-sign-in-success-content h2 {
+  color: var(--color-title-in-primary);
+  font-family: Archivo;
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-top: 7rem;
+}
+
+#page-sign-in-success-content p {
+  font-family: Poppins;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+#page-sign-in-success-content a {
+  background: var(--color-secondary);
+  border-radius: 0.8rem;
+  color: var(--color-button-text);
+  font: 700 2.0rem Archivo;
+  height: 6rem;
+  margin: 7rem auto 0;
+  text-decoration: none;
+  width: 20rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+#page-sign-in-success-content a:hover {
+  background: var(--color-secondary-dark);
+}
+
+@media (min-width: 700px) {
+  #page-sign-in-success {
+    background-size: initial;
+  }
+}
