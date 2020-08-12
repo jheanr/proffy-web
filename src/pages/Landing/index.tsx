@@ -14,12 +14,12 @@ const Landing: React.FC = () => {
   const [totalConnections, setTotalConnections] = useState(0);
 
   useEffect(() => {
-    api.get('connections').then(response => {
-      const {total} = response.data;
+    api.get('connections').then((response) => {
+      const { total } = response.data;
 
       setTotalConnections(total);
     });
-  },[totalConnections]);
+  }, [totalConnections]);
 
   return (
     <div id="page-landing">
@@ -29,30 +29,34 @@ const Landing: React.FC = () => {
           <h2>Sua plataforma de estudos online</h2>
         </div>
 
-        <img 
-          src={landingImg} 
-          alt="Plataforma de estudos" 
-          className="hero-image" 
+        <img
+          src={landingImg}
+          alt="Plataforma de estudos"
+          className="hero-image"
         />
 
         <div className="buttons-container">
           <Link to="/study" className="study">
-            <img src={studyIcon} alt="Estudar"/>
+            <img src={studyIcon} alt="Estudar" />
             Estudar
           </Link>
 
           <Link to="/give-classes" className="give-classes">
-            <img src={giveClassesIcon} alt="Dar aulas"/>
+            <img src={giveClassesIcon} alt="Dar aulas" />
             Dar aulas
           </Link>
         </div>
 
         <span className="total-connections">
-            Total de {totalConnections} conexões já realizadas <img src={purpleHeartIcon} alt="Purple heart"/>
-          </span>
+          Total de 
+{' '}
+{totalConnections} conexões já realizadas
+{' '}
+          <img src={purpleHeartIcon} alt="Purple heart" />
+        </span>
       </div>
     </div>
   );
-}
+};
 
 export default Landing;

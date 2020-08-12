@@ -17,6 +17,8 @@
   --color-button-text: #FFFFFF;
   --color-box-base: #FFFFFF;
   --color-box-footer: #FAFAFC;
+  --color-label-focused-input: #C1BCCC;
+  --color-button-disabled: #DCDCE6;
 
   font-size: 60%;
 }

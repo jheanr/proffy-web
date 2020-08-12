@@ -1,4 +1,4 @@
-#page-sign-in-success {
+#page-success {
   background-color: var(--color-primary);
   background-image: url('../../assets/images/success-background.svg') ;
   background-position: center;
@@ -14,11 +14,11 @@
   justify-content: center;
 }
 
-#page-sign-in-success-content {
+#page-success-content {
   padding: 2rem;
 }
 
-#page-sign-in-success-content h2 {
+#page-success-content h2 {
   color: var(--color-title-in-primary);
   font-family: Archivo;
   font-size: 4.8rem;
@@ -26,17 +26,18 @@
   margin-top: 7rem;
 }
 
-#page-sign-in-success-content p {
+#page-success-content p {
   font-family: Poppins;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 2rem;
+  white-space: pre-wrap;
 }
 
-#page-sign-in-success-content a {
+#page-success-content a {
   background: var(--color-secondary);
   border-radius: 0.8rem;
   color: var(--color-button-text);
-  font: 700 2.0rem Archivo;
+  font: 700 1.6rem Archivo;
   height: 6rem;
   margin: 7rem auto 0;
   text-decoration: none;
@@ -49,12 +50,12 @@
   transition: background-color 0.2s;
 }
 
-#page-sign-in-success-content a:hover {
+#page-success-content a:hover {
   background: var(--color-secondary-dark);
 }
 
 @media (min-width: 700px) {
-  #page-sign-in-success {
+  #page-success {
     background-size: initial;
   }
 }

@@ -16,10 +16,10 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
     <header className="page-header">
       <div className="top-bar-container">
         <Link to="/">
-          <img src={backIcon} alt="Voltar"/>
+          <img src={backIcon} alt="Voltar" />
         </Link>
 
-        <img src={logoImg} alt="Proffy"/>
+        <img src={logoImg} alt="Proffy" />
       </div>
 
       <div className="header-content">
@@ -30,6 +30,6 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
       </div>
     </header>
   );
-}
+};
 
 export default PageHeader;
